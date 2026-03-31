@@ -57,5 +57,11 @@ Die hier gelisteten Fehlerfälle sind beispielhaft und unvollständig.
    [I_PoPP_Token_Generation.yaml][].
    Die _ErrorMessage_ enthält mögliche Ursachen, die Hinweise auf Abhilfe 
    geben. 
+7. Die _ErrorMessage_ des PoPP-Service enthält den Fehlercode
+   "WarningUnknownCertificates" das heißt: Eine eGK wird kontaktlos verwendet
+   und ihre Zertifikate sind nicht in der eGK-Hash-Datenbank enthalten.  
+   **Abhilfe:** Hinweis anzeigen, dass die eGK kontaktbehaftet gesteckt werden
+   soll. 
+   Vorgang des PoPP-Token-Abrufs mit kontaktbehaftetem Kartenleser wiederholen.
 
 [I_PoPP_Token_Generation.yaml]:https://github.com/gematik/api-popp/blob/main/src/openapi/I_PoPP_Token_Generation.yaml
